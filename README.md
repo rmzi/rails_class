@@ -1,4 +1,4 @@
-# rails_hw1
+# rails_class
 COMSW3101 - Programming Language: Rails
 
 HW #1: Hello, World!
