@@ -1,5 +1,8 @@
-# rails_hw1
-COMSW3101 - Rails, HW #1: Hello, World!
+# rails_class
+COMSW3101 - Programming Language: Rails
+
+HW #1: Hello, World!
+HW #2: Login
 
 Author: Ramzi Abdoch, raa2148
 
