@@ -7,12 +7,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(email: params[:email_address])
+
+    user = User.find_by(email: params[:session][:email])
     if user
+      puts 'We fetched the user'
       session[:user_id] = user.id
       redirect_to users_path
     else
-      render "new"
+      render "signup"
     end  
   end
 
