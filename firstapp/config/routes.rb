@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  resources :users
+
+  get 'home' => 'home#helloworld'
+  get "signup" => "users#new", :as => "signup"
+  get 'login' => 'sessions#new'
+  post "login" => "sessions#create"
+  get "logout" => "sessions#destroy", :as => "logout"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  get 'home' => 'home#helloworld'
+  root 'sessions#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
