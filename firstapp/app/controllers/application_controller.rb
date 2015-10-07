@@ -5,10 +5,9 @@ class ApplicationController < ActionController::Base
 
   before_filter :require_user
 
-
   def current_user
     if @current_user.nil?
-      @current_user = User.find(session[:user_id]) if session[:user]
+      @current_user = User.find(session[:user_id]) #if session[:user]
     end
   end
   helper_method :current_user
