@@ -10,3 +10,5 @@ Tech Event:
   - World Maker Faire New York - 6th Annual 
     - New York Hall of Science
 		- 47-01 111th St, Corona, NY, United States
+
+Ruby on Rails, Fall 2015
